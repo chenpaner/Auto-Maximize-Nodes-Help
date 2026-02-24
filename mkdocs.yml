@@ -1,0 +1,11 @@
+site_name: Auto Maximize Nodes 插件帮助文档
+site_url: https://你的用户名.github.io/auto-maximize-nodes-docs/
+nav:
+  - 首页: index.md
+  - 安装指南: installation.md
+  - 使用说明: usage.md
+  - 常见问题: faq.md
+  - 联系与支持: contact.md
+theme:
+  name: mkdocs
+  language: zh
