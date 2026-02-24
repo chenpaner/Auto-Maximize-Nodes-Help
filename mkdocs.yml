@@ -1,5 +1,5 @@
-site_name: AMN 帮助
-site_url: https://你的用户名.github.io/auto-maximize-nodes-docs/
+site_name: Auto Maximize Nodes 插件帮助文档
+site_url: https://chenpaner.github.io/Auto-Maximize-Nodes-Help/
 nav:
   - 首页: index.md
   - 安装指南: installation.md
@@ -9,3 +9,5 @@ nav:
 theme:
   name: mkdocs
   language: zh
+docs_dir: src_docs
+site_dir: docs
