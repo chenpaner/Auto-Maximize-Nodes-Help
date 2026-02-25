@@ -9,6 +9,7 @@ nav:
 
 theme:
   name: readthedocs
+  
   language: zh
   # --- 以下为 readthedocs 主题支持的配置项 ---
 
