@@ -9,6 +9,7 @@ nav:
 theme:
   name: mkdocs
   language: zh
-
-docs_dir: src_docs   <-- 告诉 MkDocs 去 src_docs 文件夹找 Markdown 源文件
-site_dir: docs       <-- 告诉 MkDocs 把生成的网页放到 docs 文件夹
+docs_dir: src_docs
+site_dir: docs
+# docs_dir: src_docs   <-- 告诉 MkDocs 去 src_docs 文件夹找 Markdown 源文件
+# site_dir: docs       <-- 告诉 MkDocs 把生成的网页放到 docs 文件夹
