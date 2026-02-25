@@ -1,0 +1,23 @@
+name: Deploy MkDocs Site
+
+on:
+  push:
+    branches:
+      - main  # 如果您的默认分支叫 master，请改成 master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+        
+      - name: Install MkDocs
+        run: pip install mkdocs
+        
+      - name: Build and Deploy
+        # 这行命令会自动构建，并把结果推送到 gh-pages 分支
+        run: mkdocs gh-deploy --force
