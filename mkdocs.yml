@@ -8,25 +8,19 @@ nav:
   - 联系与支持: contact.md
 
 theme:
-  name: mkdocs
+  name: readthedocs
   language: zh
-  # --- 以下为根据官方文档添加的 mkdocs 主题特有配置 ---
-  
-  # 颜色模式设置 (light, dark, auto)
-  color_mode: light
-  # 是否允许用户在导航栏切换颜色模式
-  user_color_mode_toggle: false
-  
-  # 顶部导航栏视觉风格 (primary, dark, light)
+  # --- 以下为 readthedocs 主题支持的配置项 ---
+
+  # 顶部导航栏风格 (primary, dark, light)
+  # readthedocs 主题默认通常是深色或主色，这里设为 primary 以保持品牌感
   nav_style: primary
-  
-  # 代码高亮设置
+
+  # 代码高亮设置 (ReadTheDocs 主题默认开启)
   highlightjs: true
-  # 浅色模式下的代码高亮风格
+  # 代码高亮风格 (该主题通常只应用一种风格，不分深浅色自动切换)
   hljs_style: github
-  # 深色模式下的代码高亮风格
-  hljs_style_dark: github_dark
-  # 额外支持的语言列表 (默认已支持23种常用语言)
+  # 额外支持的语言列表
   hljs_languages:
     - yaml
     - rust
@@ -35,22 +29,11 @@ theme:
     - json
     - bash
 
-  # Google Analytics 配置 (如需启用，请将 G-ABC123 替换为你的实际 ID)
+  # Google Analytics 配置 (如需启用，请取消注释并替换 ID)
   # analytics:
   #   gtag: G-ABC123
 
-  # 键盘快捷键设置 (值为键盘 keyCode)
-  shortcuts:
-    help: 191    # ? 键：显示帮助
-    next: 78     # n 键：下一页
-    previous: 80 # p 键：上一页
-    search: 83   # s 键：搜索
-
-  # 侧边栏导航树的最大深度
-  navigation_depth: 2
-  
-  # 本地化设置 (虽然上面有 language: zh，但 theme 下也可指定 locale 以覆盖或明确指定)
-  # 官方支持 zh_CN (简体中文) 和 zh_TW (繁体中文)
+  # 本地化设置 (确保界面语言为简体中文)
   locale: zh_CN
 
 docs_dir: src_docs
